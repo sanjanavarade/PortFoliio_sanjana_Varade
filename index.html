@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-24">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjana Varade | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --netflix-red: #e50914;
+        --netflix-black: #141414;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--netflix-black);
+        color: #fff;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, .font-jakarta {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      ::selection {
+        background-color: var(--netflix-red);
+        color: white;
+      }
+      /* Netflix-style thin scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #141414;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 10px;
+        border: 2px solid #141414;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .netflix-row::-webkit-scrollbar {
+        height: 4px;
+      }
+      .netflix-row:hover::-webkit-scrollbar {
+        height: 4px;
+      }
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .billboard-vignette {
+        background: linear-gradient(77deg,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 85%);
+      }
+      .billboard-bottom-vignette {
+        background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#141414);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.24.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
